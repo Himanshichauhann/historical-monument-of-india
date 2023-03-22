@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">    
+
+    
+    <style>
+        body{
+            margin:0px;
+            height:100px;
+            width:100%;
+            background-image: url(data:image/jpeg;base64,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);
+            background-size: cover;
+            
+        
+        }
+        #main{
+        display:flex;
+        flex-direction:column;
+        color:white;
+        background-image: rgb(186, 186, 205);
+        text-align:left;
+        font-size:45px;
+        font-family:'Times New Roman', Times, serif;
+        box-shadow: 10px 10px 15px black,-10px -10px 15px black;
+        padding:20px;
+        margin: 20px;
+        border-radius:20px 5%;
+        }
+        #header{
+            padding-bottom: 20px;
+            margin-bottom: 400px;
+            top: .0rem;
+            height:40px;
+            text-align:center;
+            color:white;
+            font-size:45px;
+            font-family: 'Times New Roman', Times, serif;
+            width:100%;
+            position: absolute;
+            background-image:linear-gradient(rgb(20, 179, 91),rgb(163, 225, 210),rgb(215, 159, 229),rgb(213, 131, 170));
+            border-radius: 5px;
+            border-style: ridge;
+            border-color: crimson;
+         /* margin-top: 0px; */
+        }
+        
+        #footer{
+            padding-bottom: 20px;
+            margin-bottom: 400px;
+            color:white;
+            font-size:15px;
+            font-family:'Times New Roman, Times, serif';
+            height:40px;
+            text-align:center;
+            width:100%;
+            background-image:linear-gradient(rgb(20, 179, 91),rgb(163, 225, 210),rgb(215, 159, 229),rgb(213, 131, 170));
+            border-radius: 5px;
+            border-style: groove;
+            border-color: crimson;
+           
+        }
+        .img{
+            position: relative;
+            border-style: double;
+            border-color:brown;
+
+          }
+        h1{
+            color:white;
+            width: 100%;
+        }
+        h3{
+            color: cadetblue;
+            text-align: center;
+            
+
+        }
+
+        .flr{
+            margin-top: 60px;
+            width: 100%;
+            height: 300px;
+        }
+        .fl{
+            float: left;
+            width: 20%;
+        } 
+        .fr{
+            float:right;
+            width: 70%;
+        }
+        .fr p{
+            color:rgb(210, 120, 138);
+            font-size: 17px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+
+        <div id="header">
+            
+        HISTORICAL MONUMENTS                   
+            <i class="bi bi-facebook a"></i>  
+            <i class="bi bi-search a"></i>
+            <i class="bi bi-instagram"></i>
+        </div>
+        <div id="main">
+            <div class="flr">
+                <div class="fl">
+                    <a href="https://en.wikipedia.org/wiki/Taj_Mahal">
+                        <img  class="img"src="taj mahal.jpeg "width="300px"height="300px">
+                     </a>
+                </div>
+                <div class="fr">
+                <p> <u>TAJ MAHAL:</u><BR><BR>
+                Taj Mahal <B>"THE SYMBOL OF LOVE".</B>It is considerd one of the most beautiful buildings in the world.It is located in the city of the agra in northern India.<br>
+                A ruler named Shah Jahan had the Taj Mahal built as a monument and Tomb for his beloved wife ,Mumtaz Mahal. Shah Jahan was the Muslim ruler of the Mughal Empire in India from 1628 to 1658.
+                The tomb is the centrepiece of a 17-hectare (42-acre)complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall.
+                The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being “the jewel of Muslim art in India and one of the universally admired masterpieces of the world’s heritage”.<br>
+                 It is regarded by many as the best example of Mughal architecture and a symbol of India’s rich history. The Taj Mahal attracts 7–8 million visitors a year.<br>
+                In 2007, it was declared a winner of the New 7 Wonders of the World (2000–2007) initiative.<br><br>
+                <u><b>TTO KNOW MORE ABOUT TAJ MAHAL PLEASE CLICK ON THE PICTURE GIVEN IN THE LEFT</b></u>
+                </p>
+                </div>
+            </div>
+          <div class="flr">
+            <div class="fl">
+            <a href="https://en.wikipedia.org/wiki/India_Gate">
+            <img  class="img" src="india gate.jpg "width=320px height=300px>
+            </a>
+            </div>
+            <div class="fr">
+                <p> <u><b> India Gate:</b></u><br><br>
+                    India gate was constructed to honor the soldiers of India that were killed during world war 1. This structure boasts of a beautiful architecture by India. <br>It was first inaugurated in the year 1931 and it still has the same charm. Also, this structure reminds of us the sacrifices made by thousands of soldiers who have given their lives during the first world war.
+                    <br> The essay on India gate is an insight into this famous memorial in India.<br><br>
+                    <U><b> TO KNOW MORE ABOUT INDIA GATE PLEASE CLICK ON THE PICTURE GIVEN IN THE LEFT....</b></U>
+                </p>
+            </div>
+          </div>
+          <div class="flr">
+            <div class="fl">
+            <a href="https://en.wikipedia.org/wiki/Hawa_Mahal">
+            <img class="img" src="hawa mahal.jpg" width="300px" height="300px">
+            </a>
+            </div>
+            <div class="fr">
+            <p><u><b>Hawa Mahal:</b></u><br><br>
+                Hawa Mahal' means "Palace of Winds". Hawa Mahal is a palace in Jaipur, Rajasthan, India. It was built in 1799 by Maharaja Sawai Pratap Singh. Hawa Mahal was designed by Lal Chand Ustad.
+                 Hawa Mahal is built of Red and Pink Sandstone. The palace is a five-story pyramidal shaped monument which is situated on the main thorough fare in the heart of Jaipur’s business centre.
+                The palace is a five-story pyramidal shaped monument. The front elevation is like a honeycomb web of a beehive built with small portholes. Each porthole has miniature windows and has carved sandstone grills, finials and domes. 
+            <br><br>
+            <u><b> TO KNOW MORE ABOUT THE HAWA MAHAL PLEASE CLICK ON THE IMAGE GIVEN IN THE LEFT....</b></u>
+            
+            </p>
+            </div>
+         </div>
+          
+    
+          <div class="flr">
+            <div class="fl">
+            <a href="https://en.wikipedia.org/wiki/Gateway_of_India">
+            <img  class="img" src="gateway of india.jpg" width="300px"  height="300px">
+            </a>
+            </div>
+            <div class="fr">
+                <p><u><b>Gate Way Of India:</b></u><br><br>
+                The Gateway of India is an arch monument built during the 20th century in Bombay, India. The monument was erected to commemorate the landing of King George V and Queen Mary at Apollo Bunder on their visit to India in 1911.
+                Built in Indo-Saracenic style, the foundation stone for the Gateway of India was laid on 31 March 1911. The structure is an arch made of basalt, 26 metres (85 feet) high. The final design of George Wittet was sanctioned in 1914 and the construction of the monument was completed in 1924. The Gateway was later used as a symbolic ceremonial entrance to India for Viceroys and the new Governors of Bombay.  It served to allow entry and access to India.
+                The gateway of India is located on the waterfront at Apollo Bunder area at the end of Chhatrapati Shivaji Marg in South Mumbai and overlooks the Arabian Sea. The monument has also been referred to as the Taj Mahal of Mumbai, and is the city’s top tourist attraction
+                <br><br>
+                <u><b> TO KNOW MORE ABOUT THE GATE WAY OF INDIA PLEASE CLICK ON THE IMAGE GIVEN IN THE LEFT......</b></u>
+                </p>
+            </div>
+          </div>
+           
+          <div class="flr">
+            <div class="fl">
+            <a href="https://en.wikipedia.org/wiki/Charminar">
+            <img  class="img" src="charminar.jpg"width=300px height="300px">
+            </a>
+           </div>
+           <div class="fr">
+            <p> <u><b>Charminar:</b></u><br><br>
+                Charminar is one of the greatest monuments in India that has a beautiful history. It is said that Sultan Muhammad Quli Qutub Shah, the ruler of the Qutub Shahi Dynasty, first saw Queen Bhagwati here and fell in love. He then constructed this monument as a memory. Some of the historians also believe that it is a monument constructed to commemorate the victory over a deadly plague. 
+                The four minarets signify four directions. It is also believed that those four minarets in this monument glorify the four Khalifas of Islam.
+                This monument was built in the year 1591. It is 48.7 meters tall. The top floor has a mosque where people used to sit and pray to God. The first floor was used as a school for kids.
+                 This monument has a secret tunnel that connects with Golconda Fort. The Indo-Islamic architecture of this monument is brilliant. In fact, it has become the symbol of tourism in Hyderabad. Many tourists from all over the world visit this place. 
+                 Charminar is an icon of beauty and the rich history of India.
+                 <br><br>
+                 <u><b>TO KNOW MORE ABOUT THE CHARMINAR PLEASE CLICK ON THE IMAGE GIVEN IN THE LEFT.....</b></u>
+            </p>
+           </div>
+           </div>
+           
+          <div class="flr">
+            <div class="fl">
+               <a href="https://en.wikipedia.org/wiki/Qutb_Minar">
+               <img  class="img" src="qutub minar.jpg" width="300px" height="300px">
+               </a>
+           </div>
+                <div class="fr">
+                     <p><u><b>Qutab Minar</b></u><br><br>
+                        Qutub Minar' is located in Delhi, India. It is the highest stone tower in India. It is a little over 72 meters high and built in Red Sandstone. It contains 379 stairs to reach the top and the diameter of base is 14.3 meters where as the last store is of 2.7 meters. 
+                        The walls of the minar intricately carved and inscribed with verses from the holy Quran. Qutub Minar is also a significant historical monument. It is a UNESCO World Heritage Site.
+                        The construction of Qutub Minar was started by Qutub-ud-din-Aibek in 12th century. But it was completed by his successor Iltutmish. It is often viewed as a symbol of the military might of the Turko-Afghan dynasty.
+                        <br><br>
+                        <u><b>TO KNOW MORE ABOUT THE QUTAB MINAR PLEASE CLICK ON THE IMAGE GIVEN IN THE LEFT.......</b></u>
+                    </p>
+                </div>
+            </div>
+    
+            <div>
+                <h3>NATIONAL ANTHEM</h3>
+                <div align="center">
+                    <audio source src="national anthem.mp3" type="audio/mp3" controls></audio>
+                </div>
+            </div>
+        </div>
+    </div> 
+        
+    </div>
+    <div id="footer">
+        <h1>
+          DESIGNED AND DEVELOPED BY:Himanshi Chauhan.   
+           
+        </h1>
+    </div>
+
+   
+       
+</body>
+</html>
